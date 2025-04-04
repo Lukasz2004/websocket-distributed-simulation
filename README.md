@@ -60,3 +60,5 @@ Uwaga! Znaczenie ma kolejność uruchamiania poszczególnych podsystemów aplika
     </ul>
   </li>
 </ul>
+<h2>Uwagi końcowe</h2>
+Ikony aplikacji pozyskane zostały z serwisu "Flaticon"
