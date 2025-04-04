@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.35" orientation="VERTICAL" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pwr.lczerwinski.websocket_simulation.tanker.TankerController">
+   <items>
+      <Pane style="-fx-background-color: #E8E8E8; -fx-border-color: black;">
+         <children>
+            <VBox>
+               <children>
+                  <TilePane prefColumns="2" prefWidth="300.0" tileAlignment="TOP_LEFT">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="Connection Settings:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="setupButton" mnemonicParsing="false" onAction="#setup" text="Setup" TilePane.alignment="TOP_RIGHT" />
+                     </children>
+                  </TilePane>
+                  <Label text="My IP:" />
+                  <Label fx:id="tankerIP" text="Unset" />
+                  <Label text="Office IP:" />
+                  <Label fx:id="officeIP" text="Unset" />
+                  <Label layoutX="30.0" layoutY="82.0" text="Sewage Plant IP:" />
+                  <Label fx:id="plantIP" text="Unset" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="10.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="Tanker App">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tankerID" layoutX="30.0" layoutY="40.0" text="ID: Setup required" />
+                  <Label fx:id="statusField" layoutX="30.0" layoutY="40.0" text="Status: Active" />
+                  <Label text="Tank Status:" />
+                  <StackPane maxWidth="1.7976931348623157E308" prefWidth="300.0">
+                     <children>
+                        <ProgressBar fx:id="tankProgressBar" maxWidth="1.7976931348623157E308" progress="0.0" style="-fx-accent: #cef5bc;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </ProgressBar>
+                        <Label fx:id="tankLabel" text="0l/0l" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </items>
+</SplitPane>
