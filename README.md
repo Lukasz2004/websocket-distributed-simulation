@@ -3,7 +3,11 @@ Projekt realizuje rozproszony system aplikacji dokonujących symulacji pracy fir
 <br>
 <img alt="AppView" src="https://github.com/Lukasz2004/websocket-distributed-simulation/blob/master/github/websocket-distributed-simulation.png?raw=true" align="center">
 Projekt zrealizowany w ramach zajęć laboratoryjnych „Języki Programowania”, Politechnika Wrocławska, semestr zimowy 2024/2025. 
-<br>
+<ul>
+  <li>Autor Projektu: Łukasz Czerwiński</li>
+  <li>Prowadzący Projektu: dr inż. Tomasz Kubik</li>
+</ul>
+
 <h3>Użyte narzędzia:</h3>
 <ul>
   <li>Java, ver. 17</li>
